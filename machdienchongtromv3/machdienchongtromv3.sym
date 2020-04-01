@@ -1,0 +1,142 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     MAIN.a
+022     MAIN.sai
+023     MAIN.count
+024-029 MAIN.pass
+02A-02F MAIN.mk
+030     MAIN.phim
+031     lcd_init.i
+031     quetphim.c
+031     khoitao.@SCRATCH1
+031     @PSTRINGC7_9600_62_63.@SCRATCH1
+031     baodong.@SCRATCH1
+031     MAIN.@SCRATCH1
+031     @PSTRINGC7_650.@SCRATCH1
+032     quetphim.r
+032-035 lcd_init.LCD_INIT_STRING
+032     @PSTRINGC7_9600_62_63.@SCRATCH2
+032     @PSTRINGC7_650.@SCRATCH2
+033     quetcot.col
+033     quetphim.@SCRATCH1
+033     @PSTRINGC7_9600_62_63.@SCRATCH3
+033     @PSTRINGC7_650.@SCRATCH3
+034     lcd_putc.c
+034     @PSTRINGC7_9600_62_63.@SCRATCH4
+034     @PSTRINGC7_650.@SCRATCH4
+035     lcd_gotoxy.x
+036     lcd_gotoxy.y
+036     @delay_ms2.P1
+036     lcd_init.@SCRATCH1
+037     lcd_gotoxy.address
+038     lcd_gotoxy.@SCRATCH1
+039     lcd_send_byte.address
+03A     lcd_send_byte.n
+03B     lcd_read_byte.low
+03B     lcd_send_byte.@SCRATCH1
+03C     lcd_read_byte.high
+03C     lcd_send_nibble.n
+03D     lcd_read_nibble.n
+03D     lcd_read_byte.@SCRATCH1
+03E     lcd_read_nibble.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  key.call
+000008  key.data
+000018  @const673.call
+00001B  @const675.call
+00001E  @const676.call
+000025  @const677.call
+00002A  @const678.call
+000033  @const680.call
+00003E  @const681.call
+00004B  @const682.call
+000053  @const693.call
+00005B  @const696.call
+00005C  @const698.call
+00005D  @const700.call
+00005E  @const702.call
+00005F  @const704.call
+000060  @const706.call
+000061  @const707.call
+000066  @const708.call
+00006B  @const709.call
+000072  @const710.call
+00007B  @const711.call
+000083  @const712.call
+000084  @const713.call
+000085  @const714.call
+000086  @const715.call
+000087  @const716.call
+000088  @const717.call
+000089  @const718.call
+00008F  @const719.call
+000097  @delay_ms2
+0000AB  lcd_send_nibble
+0000DB  lcd_read_nibble
+00010C  lcd_send_byte
+000114  lcd_read_byte
+00016A  lcd_init
+0001B0  lcd_gotoxy
+0001C2  lcd_putc
+0001EE  @PSTRINGC7_650
+000244  @PSTRINGC7_9600_62_63
+00029C  khoitao
+000310  baodong
+000368  quetphim
+000372  quetcot
+0003EB  MAIN
+0003EB  @cinit1
+0003FF  @cinit2
+
+Project Directory:
+    F:\CCS\machdienchongtromv3\
+
+Project Files:
+    machdienchongtromv3.c                                   [29-Dec-19 23:38  CRC=EB085A5C]
+    machdienchongtromv3.h                                   [07-Dec-19 11:21  CRC=CF12E969]
+    E:\Program\PICC\Devices\16F877A.h                       [18-Apr-14 16:56  CRC=4F277C97]
+    E:\Program\PICC\Drivers\lcd.c                           [03-Dec-19 18:33  CRC=D1A6378A]
+
+Source signature=AC8F2F70
+
+Units:
+    machdienchongtromv3 (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   machdienchongtromv3.xsym
+    Errors:      machdienchongtromv3.err
+    Ext Symbols: machdienchongtromv3.esym
+    INHX8:       machdienchongtromv3.hex
+    Symbols:     machdienchongtromv3.sym
+    List:        machdienchongtromv3.lst
+    Debug/COFF:  machdienchongtromv3.cof
+    Project:     machdienchongtromv3.ccspjt
+    Call Tree:   machdienchongtromv3.tre
+    Statistics:  machdienchongtromv3.STA
